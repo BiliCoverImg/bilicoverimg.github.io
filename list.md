@@ -417,5 +417,6 @@
 * [2018.02.21-年初六 藕夹](https://bilicover.gitbooks.io/2018/content/20180221.html)
 * [2018.02.22-紫罗兰永恒花园](https://bilicover.gitbooks.io/2018/content/20180222.html)
 * [2018.02.23-灵契 第二季](https://bilicover.gitbooks.io/2018/content/20180223.html)
+* [2018.02.24-爱吃拉面的小泉同学](https://bilicover.gitbooks.io/2018/content/20180224.html)
 
 ## 2018年03月
