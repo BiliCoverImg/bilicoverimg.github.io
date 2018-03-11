@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--禁止縮放-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<title>Bilibili 客户端封面收藏</title>
+
+<link href="css/public.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="css/swiper.min.css">
+	
+<script src="js/swiper.min.js"></script>
+
+<style type="text/css">
+
+.my-pagination .swiper-pagination-bullet { text-align: center; border-radius: 0; opacity: 1; }
+.my-pagination ul { display: -webkit-box; }
+.my-pagination li { display: block; background: #ffffff; overflow: hidden; box-flex: 1; -moz-box-flex: 1; -webkit-box-flex: 1; height: 40px; line-height: 40px; position: relative; font-size: 15px; }
+.my-pagination li:after { position: absolute; top: auto; right: auto; bottom: 0; left: 0; z-index: 1; display: block; width: 100%; height: 1px; content: ''; background-color: #dcdcdc; -webkit-transform-origin: 50% 100%; transform-origin: 50% 100%; -webkit-transform: scaleY(.5) }
+.my-pagination .swiper-pagination-bullet-active { color: #000000; }
+.my-pagination .swiper-pagination-bullet-active:after { opacity: 1; background-color: #000000; height: 5px; }
+
+</style>
+
+<div class="swiper-container">
+	<div class="my-pagination"><ul class="my-pagination-ul"></ul></div>
+	<div class="swiper-wrapper">
+    	
+		<div class="swiper-slide">
+			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="about.html"></iframe>
+		</div>
+		
+		<div class="swiper-slide">
+			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2015.html"></iframe>
+		</div>
+        
+        
+		<div class="swiper-slide">
+			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2016.html"></iframe>
+		</div>
+		
+		
+		<div class="swiper-slide">
+			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2017.html"></iframe>
+		</div>
+		
+		
+		<div class="swiper-slide">
+			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2018.html"></iframe>
+		</div>
+		
+
+<script> 
+var mySwiper = new Swiper('.swiper-container',{
+pagination: '.my-pagination-ul',
+paginationClickable: true,
+paginationBulletRender: function (index, className) {
+switch (index) {
+  case 0: name='关于';break;
+  case 1: name='2015年';break;
+  case 2: name='2016年';break;
+  case 3: name='2017年';break;
+  case 4: name='2018年';break;
+  default: name='';
+}
+      return '<li class="' + className + '">' + name + '</li>';
+  }
+})
+</script>
+
+
+<!--
+</body>
+-->
+</html>
