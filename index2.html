@@ -235,9 +235,9 @@ items.forEach(function(i) {
 			tooltip, bg, logo, url;
 	//console.log(date, hour, data.length);
 	var dateString = [date.substr(0,4),date.substr(4,2),date.substr(6,2)].join('/');
-	var title = i.t;
+	var titletext = i.t;
 	var item = _('li', { event: {click: genSecondary}}, [
-		_('div', {}, [_('text', dateString + ' － ' + title)]),
+		_('div', {}, [_('text', dateString + ' － ' + titletext)]),
 		_('div', {}, [_('span', {class:'timeago',datetime:dateString+' '+hour+':00:00 +0800'}), 
 
 _('text', ' '+data.length+' 个条目 ')]),
