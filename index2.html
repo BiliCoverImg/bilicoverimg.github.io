@@ -1,7 +1,5 @@
 <!DOCTYPE HTML><html>
-<head><meta charset=utf-8><meta name="referrer" content="never"><meta name=viewport 
-
-content="width=device-width,initial-scale=1.0,user-scalable=0"><title>splash历史整合</title>
+<head><meta charset=utf-8><meta name="referrer" content="never"><meta name=viewport content="width=device-width,initial-scale=1.0,user-scalable=0"><title>splash历史整合</title>
 <link rel="stylesheet" type="text/css" href="./style/biliplus.min.css?171014" />
 <style>
 body{margin:10px}
@@ -9,11 +7,7 @@ h1{font-size:20px}
 a:link,a:visited,a:active{text-decoration:none;color:#1E90FF}
 a:hover{color:#555}
 .list{list-style:none;padding:0;cursor:default;--border-color:#999}
-.list>li{padding:10px 20px;border:1px var(--border-color) solid;border-bottom:none;font-
-
-size:12px;color:#747474;animation-fill-mode:forwards;animation-duration:.2s;transform:translateY(-
-
-20px);opacity:0;background:#F9F9F9}
+.list>li{padding:10px 20px;border:1px var(--border-color) solid;border-bottom:none;font-size:12px;color:#747474;animation-fill-mode:forwards;animation-duration:.2s;transform:translateY(-20px);opacity:0;background:#F9F9F9}
 .list>li.last-visited{background:#d7d7d7}
 .list>li.visible{transform:translateY(0);opacity:1}
 .list>li:first-child{border-radius:5px 5px 0 0}
@@ -29,140 +23,14 @@ size:12px;color:#747474;animation-fill-mode:forwards;animation-duration:.2s;tran
 }
 img{max-width:600px}
 </style></head>
-<body id="content"><h1>splash历史整合 (style copy from BiliPlus & data from Bilibili)</h1><a 
-
-href="../"><h3>Exit</h3></a><ul class="list" id="primary"></ul><ul class="list" 
-
-id="secondary"></ul><script>
+<body id="content"><h1>splash历史整合 (style copy from BiliPlus & data from Bilibili)</h1><a href="../"><h3>Exit</h3></a><ul class="list" id="primary"></ul><ul class="list" id="secondary"></ul><script>
 'use strict';
-function _(e,t,n){var r=null;if("text"===e)return document.createTextNode(t);r=document.createElement
-
-(e);for(var l in t)if("style"===l)for(var a in t.style)r.style[a]=t.style[a];else if("className"===l)
-
-r.className=t[l];else if("event"===l)for(var a in t[l])r.addEventListener(a,t[l][a]);else 
-
-r.setAttribute(l,t[l]);if(n)for(var s=0;s<n.length;s++)null!=n[s]&&r.appendChild(n[s]);return r}
+function _(e,t,n){var r=null;if("text"===e)return document.createTextNode(t);r=document.createElement(e);for(var l in t)if("style"===l)for(var a in t.style)r.style[a]=t.style[a];else if("className"===l)r.className=t[l];else if("event"===l)for(var a in t[l])r.addEventListener(a,t[l][a]);else r.setAttribute(l,t[l]);if(n)for(var s=0;s<n.length;s++)null!=n[s]&&r.appendChild(n[s]);return r}
 function gEle(a){return document.getElementById(a);}
 var pageConfig={lang:'zh'},
 canls=true;
 (function(){
-var items=[{"n":"20180518_00","t":"一人之下 第二季","s":0,"c":{"code":0,"data":
-
-[{"id":18,"type":1,"animate":1,"duration":3,"start_time":1526572800,"end_time":1526659199,"thumb":"http:
-
-//i0.hdslb.com/bfs/sycp/tmaterial/201805/b4fc5cac29bb85660a83934fae66a9dc.jpg","hash":"9881805b279d74e77
-
-3b8173113dc43fe","times":5,"skip":1,"uri":"https://www.bilibili.com/bangumi/play/ss6402/"}]}},
-
-{"n":"20180517_00","t":"OnePlus 6新品发布会","s":0,"c":{"code":0,"data":
-
-[{"id":17,"type":1,"animate":1,"duration":3,"start_time":1526486400,"end_time":1526572799,"thumb":"http:
-
-//i0.hdslb.com/bfs/sycp/tmaterial/201805/f5a568d996e54593fbb73e0b0d46f90b.jpg","hash":"5afb6f11848cdf114
-
-d1b5d325d2bf1ec","times":5,"skip":1,"uri":"https://www.bilibili.com/blackboard/activity-OnePlus6-zhibo-
-
-m.html"}]}},{"n":"20181123_00","t":"射手座","s":0,"c":{"code":0,"data":
-
-[{"id":15,"type":2,"animate":1,"duration":3,"start_time":1542902400,"end_time":1545407999,"thumb":"http:
-
-//i0.hdslb.com/bfs/sycp/tmaterial/201805/a896c514f7e287b8c9fdfdfb18c6237e.jpg","hash":"b8d1aceadab571337
-
-6d55a6b742eb631","times":5,"skip":1,"uri":""}]}},{"n":"20181024_00","t":"天蝎座","s":0,"c":
-
-{"code":0,"data":[{"id":14,"type":2,"animate":1,"duration":3,"start_time":1540310400, 
-
-"end_time":1542902399,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/4761de68ed694d8df8e3b3cbd8a
-
-66169.jpg","hash":"2027487d4d2d7fd51deef11603035b6a","times":5,"skip":1,"uri":""}]}},{"n":"20180923_00-
-
-fe442b3.json","t":"天秤座","s":0,"c":{"code":0,"data":
-
-[{"id":13,"type":2,"animate":1,"duration":3,"start_time":1537632000,"end_time":1540310399,"thumb":"http:
-
-//i0.hdslb.com/bfs/sycp/tmaterial/201805/58e10d12726ebf19283f56028bdfb620.jpg","hash":"3848c3b86848a0842
-
-4772a9a2b865060","times":5,"skip":1,"uri":""}]}},{"n":"20180823_00","t":"处女座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":12,"type":2,"animate":1,"duration":3,"start_time":1534953600,"end_time":1537631999,"thumb":"http:
-
-//i0.hdslb.com/bfs/sycp/tmaterial/201805/2d11938104df00152c26ac8abab7b411.jpg","hash":"059952136b4115c14
-
-24befea21132737","times":5,"skip":1,"uri":""}]}},{"n":"20180723_00","t":"狮子座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":11,"type":2,"animate":1,"duration":3,"start_time":1532275200,"end_time":1534953599,"thumb":"http:
-
-//i0.hdslb.com/bfs/sycp/tmaterial/201805/39939fef1efd5c7d23229bb134d8a132.jpg","hash":"5e7a7315f3acdb68e
-
-2213253561f0ecf","times":5,"skip":1,"uri":""}]}},{"n":"20180622_00","t":"巨蟹座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":10,"type":2,"animate":1,"duration":3,"start_time":1529596800,"end_time":1532275199,"thumb":"http:
-
-//i0.hdslb.com/bfs/sycp/tmaterial/201805/def9c7d97cd9d975a398a1216cf1f458.jpg","hash":"5f58df4fd717d4922
-
-f778483f257f910","times":5,"skip":1,"uri":""}]}},{"n":"20180521_00","t":"双子座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":9,"type":2,"animate":1,"duration":3,"start_time":1526832000,"end_time":1529596799,"thumb":"http:/
-
-/i0.hdslb.com/bfs/sycp/tmaterial/201805/dadfc03b1bd8a12dbc8aa6bc4bfe434c.jpg","hash":"99b63dd53b7f289f5e
-
-ba7a8ad343b42a","times":5,"skip":1,"uri":""}]}},{"n":"20190420_00","t":"金牛座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":8,"type":2,"animate":1,"duration":3,"start_time":1555689600,"end_time":1558367999,"thumb":"http:/
-
-/i0.hdslb.com/bfs/sycp/tmaterial/201805/c2a4503b3adf77bf23ff5fcadae8fce7.jpg","hash":"866c7e425cf3556a75
-
-7cc29703d8fce2","times":5,"skip":1,"uri":""}]}},{"n":"20190321_00","t":"牧羊座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":7,"type":2,"animate":1,"duration":3,"start_time":1553097600,"end_time":1555689599,"thumb":"http:/
-
-/i0.hdslb.com/bfs/sycp/tmaterial/201805/3b04a4f3b0d3763505581d7912f2d75b.jpg","hash":"78a532f51edc10153a
-
-4974618cb4866e","times":5,"skip":1,"uri":""}]}},{"n":"20180101_00","t":"默认封面","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":6,"type":1,"animate":1,"duration":3,"start_time":1514736000,"end_time":2524579200,"thumb":"http:/
-
-/i0.hdslb.com/bfs/sycp/tmaterial/201805/101f2f52a53f37a5fff44d7b9592ed72.png","hash":"bd2d11245b30b630df
-
-f3000919399502","times":5,"skip":1,"uri":""}]}},{"n":"20190219_00","t":"双鱼座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":5,"type":2,"animate":1,"duration":3,"start_time":1550505600,"end_time":1553097599,"thumb":"http:/
-
-/i0.hdslb.com/bfs/sycp/tmaterial/201805/0a68a201b88eb530516789e42332e85c.jpg","hash":"ec59f7126692b615d2
-
-a337337afe33d2","times":5,"skip":1,"uri":""}]}},{"n":"20190120_00","t":"水瓶座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":4,"type":2,"animate":1,"duration":3,"start_time":1547913600,"end_time":1550505599,"thumb":"http:/
-
-/i0.hdslb.com/bfs/sycp/tmaterial/201805/ab3ca575feca531b43b58da3944e5ccd.jpg","hash":"0e75d124a2c816e761
-
-8598ee51d9094f","times":5,"skip":1,"uri":""}]}},{"n":"20181222_00","t":"魔羯座","s":0,"c":
-
-{"code":0,"data":
-
-[{"id":3,"type":2,"animate":1,"duration":3,"start_time":1545408000,"end_time":1547913599,"thumb":"http:/
-
-/i0.hdslb.com/bfs/sycp/tmaterial/201805/d3fc212c083710d292aae6d50dccf7a5.jpg","hash":"bc02f74f78b6b0a436
-
-a44a3a8fe23355","times":5,"skip":1,"uri":""}]}}];
+var items=[{"n":"20180518_00","t":"一人之下 第二季","s":0,"c":{"code":0,"data":[{"id":18,"type":1,"animate":1,"duration":3,"start_time":1526572800,"end_time":1526659199,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/b4fc5cac29bb85660a83934fae66a9dc.jpg","hash":"9881805b279d74e773b8173113dc43fe","times":5,"skip":1,"uri":"https://www.bilibili.com/bangumi/play/ss6402/"}]}},{"n":"20180517_00","t":"OnePlus 6新品发布会","s":0,"c":{"code":0,"data":[{"id":17,"type":1,"animate":1,"duration":3,"start_time":1526486400,"end_time":1526572799,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/f5a568d996e54593fbb73e0b0d46f90b.jpg","hash":"5afb6f11848cdf114d1b5d325d2bf1ec","times":5,"skip":1,"uri":"https://www.bilibili.com/blackboard/activity-OnePlus6-zhibo-m.html"}]}},{"n":"20181123_00","t":"射手座","s":0,"c":{"code":0,"data":[{"id":15,"type":2,"animate":1,"duration":3,"start_time":1542902400,"end_time":1545407999,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/a896c514f7e287b8c9fdfdfb18c6237e.jpg","hash":"b8d1aceadab5713376d55a6b742eb631","times":5,"skip":1,"uri":""}]}},{"n":"20181024_00","t":"天蝎座","s":0,"c":{"code":0,"data":[{"id":14,"type":2,"animate":1,"duration":3,"start_time":1540310400, "end_time":1542902399,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/4761de68ed694d8df8e3b3cbd8a66169.jpg","hash":"2027487d4d2d7fd51deef11603035b6a","times":5,"skip":1,"uri":""}]}},{"n":"20180923_00-fe442b3.json","t":"天秤座","s":0,"c":{"code":0,"data":[{"id":13,"type":2,"animate":1,"duration":3,"start_time":1537632000,"end_time":1540310399,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/58e10d12726ebf19283f56028bdfb620.jpg","hash":"3848c3b86848a08424772a9a2b865060","times":5,"skip":1,"uri":""}]}},{"n":"20180823_00","t":"处女座","s":0,"c":{"code":0,"data":[{"id":12,"type":2,"animate":1,"duration":3,"start_time":1534953600,"end_time":1537631999,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/2d11938104df00152c26ac8abab7b411.jpg","hash":"059952136b4115c1424befea21132737","times":5,"skip":1,"uri":""}]}},{"n":"20180723_00","t":"狮子座","s":0,"c":{"code":0,"data":[{"id":11,"type":2,"animate":1,"duration":3,"start_time":1532275200,"end_time":1534953599,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/39939fef1efd5c7d23229bb134d8a132.jpg","hash":"5e7a7315f3acdb68e2213253561f0ecf","times":5,"skip":1,"uri":""}]}},{"n":"20180622_00","t":"巨蟹座","s":0,"c":{"code":0,"data":[{"id":10,"type":2,"animate":1,"duration":3,"start_time":1529596800,"end_time":1532275199,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/def9c7d97cd9d975a398a1216cf1f458.jpg","hash":"5f58df4fd717d4922f778483f257f910","times":5,"skip":1,"uri":""}]}},{"n":"20180521_00","t":"双子座","s":0,"c":{"code":0,"data":[{"id":9,"type":2,"animate":1,"duration":3,"start_time":1526832000,"end_time":1529596799,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/dadfc03b1bd8a12dbc8aa6bc4bfe434c.jpg","hash":"99b63dd53b7f289f5eba7a8ad343b42a","times":5,"skip":1,"uri":""}]}},{"n":"20190420_00","t":"金牛座","s":0,"c":{"code":0,"data":[{"id":8,"type":2,"animate":1,"duration":3,"start_time":1555689600,"end_time":1558367999,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/c2a4503b3adf77bf23ff5fcadae8fce7.jpg","hash":"866c7e425cf3556a757cc29703d8fce2","times":5,"skip":1,"uri":""}]}},{"n":"20190321_00","t":"牧羊座","s":0,"c":{"code":0,"data":[{"id":7,"type":2,"animate":1,"duration":3,"start_time":1553097600,"end_time":1555689599,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/3b04a4f3b0d3763505581d7912f2d75b.jpg","hash":"78a532f51edc10153a4974618cb4866e","times":5,"skip":1,"uri":""}]}},{"n":"20180101_00","t":"默认封面","s":0,"c":{"code":0,"data":[{"id":6,"type":1,"animate":1,"duration":3,"start_time":1514736000,"end_time":2524579200,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/101f2f52a53f37a5fff44d7b9592ed72.png","hash":"bd2d11245b30b630dff3000919399502","times":5,"skip":1,"uri":""}]}},{"n":"20190219_00","t":"双鱼座","s":0,"c":{"code":0,"data":[{"id":5,"type":2,"animate":1,"duration":3,"start_time":1550505600,"end_time":1553097599,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/0a68a201b88eb530516789e42332e85c.jpg","hash":"ec59f7126692b615d2a337337afe33d2","times":5,"skip":1,"uri":""}]}},{"n":"20190120_00","t":"水瓶座","s":0,"c":{"code":0,"data":[{"id":4,"type":2,"animate":1,"duration":3,"start_time":1547913600,"end_time":1550505599,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/ab3ca575feca531b43b58da3944e5ccd.jpg","hash":"0e75d124a2c816e7618598ee51d9094f","times":5,"skip":1,"uri":""}]}},{"n":"20181222_00","t":"魔羯座","s":0,"c":{"code":0,"data":[{"id":3,"type":2,"animate":1,"duration":3,"start_time":1545408000,"end_time":1547913599,"thumb":"http://i0.hdslb.com/bfs/sycp/tmaterial/201805/d3fc212c083710d292aae6d50dccf7a5.jpg","hash":"bc02f74f78b6b0a436a44a3a8fe23355","times":5,"skip":1,"uri":""}]}}];
 function prettySize(size) {
 	var index = 0, sizeUnit = [' B',' KB', ' MB'];
 	while (size >= 1024) {
@@ -171,9 +39,7 @@ function prettySize(size) {
 	}
 	return size.toFixed(index>0?2:0) + sizeUnit[index];
 }
-var currentState, pendingState = 0, preserveScroll = [0,0], classMap = ['primary','secondary'], 
-
-switching = false, pendingClassModify=[];;
+var currentState, pendingState = 0, preserveScroll = [0,0], classMap = ['primary','secondary'], switching = false, pendingClassModify=[];;
 function slideOutOnScreen() {
 	switching = true;
 	preserveScroll[currentState] = window.scrollY;
@@ -235,12 +101,10 @@ items.forEach(function(i) {
 			tooltip, bg, logo, url;
 	//console.log(date, hour, data.length);
 	var dateString = [date.substr(0,4),date.substr(4,2),date.substr(6,2)].join('/');
-	var titletext = i.t;
+	var title = i.t;
 	var item = _('li', { event: {click: genSecondary}}, [
-		_('div', {}, [_('text', dateString + ' － ' + titletext)]),
-		_('div', {}, [_('span', {class:'timeago',datetime:dateString+' '+hour+':00:00 +0800'}), 
-
-_('text', ' '+data.length+' 个条目 ')]),
+		_('div', {}, [_('text', dateString + ' － ' + title)]),
+		_('div', {}, [_('span', {class:'timeago',datetime:dateString+' '+hour+':00:00 +0800'}), _('text', ' '+data.length+' 个条目 ')]),
 		_('div', {}, [_('text', '图片id：' + data.map(function(i){return i.id}).join(','))])
 	]);
 	item.list = data;
@@ -251,9 +115,7 @@ function genSecondary() {
 	if (switching) return;
 	var secondary = document.getElementById('secondary');
 	Array.from(secondary.children).forEach(function(i){i.remove()});
-	Array.from(document.querySelectorAll('.last-visited')).forEach(function(i){i.classList.remove
-
-('last-visited')});
+	Array.from(document.querySelectorAll('.last-visited')).forEach(function(i){i.classList.remove('last-visited')});
 	this.classList.add('last-visited');
 	secondary.appendChild(_('li', {event:{click:returnPrimary}}, [
 		_('div',{},[_('text', '返回')])
@@ -266,15 +128,9 @@ function genSecondary() {
 				pic = (i.thumb || i.thumbUrl).split('?')[0];
 		secondary.appendChild(_('li', {style:{fontSize:'14px',color:'#333'}}, [
 			_('div', {}, [_('text', 'id '+i.id)]),
-			_('div', {}, [_('text', '显示时间段：'+(new Date(start*1e3)).toLocaleString
-
-(undefined, {hour12:false}) + ' - ' + (new Date(end*1e3)).toLocaleString(undefined, {hour12:false}))]),
-			_('div', {}, url?[_('text', '跳转链接 '), _('a', {href:url,target:'_blank'},[_
-
-('text', url)])] : []),
-			_('img', {'original-src':pic,_src:pic+'@600w.jpg',src:blankImg,style:{width:
-
-(600/devicePixelRatio)+'px',maxWidth:'100%'},alt:'',title:pic,event:{error:imgLost}})
+			_('div', {}, [_('text', '显示时间段：'+(new Date(start*1e3)).toLocaleString(undefined, {hour12:false}) + ' - ' + (new Date(end*1e3)).toLocaleString(undefined, {hour12:false}))]),
+			_('div', {}, url?[_('text', '跳转链接 '), _('a', {href:url,target:'_blank'},[_('text', url)])] : []),
+			_('img', {'original-src':pic,_src:pic+'@600w.jpg',src:blankImg,style:{width:(600/devicePixelRatio)+'px',maxWidth:'100%'},alt:'',title:pic,event:{error:imgLost}})
 		]));
 	});
 	data.length > 1 && secondary.appendChild(_('li', {event:{click:returnPrimary}}, [
