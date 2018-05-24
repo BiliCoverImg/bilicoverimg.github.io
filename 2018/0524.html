@@ -1,0 +1,193 @@
+<!DOCTYPE HTML><html>
+<head><meta charset=utf-8><meta name="referrer" content="never"><meta name=viewport content="width=device-width,initial-scale=1.0,user-scalable=0"><title>splash历史整合</title>
+<link rel="stylesheet" type="text/css" href="../style/biliplus.min.css?171014" />
+<style>
+body{margin:10px}
+h1{font-size:20px}
+a:link,a:visited,a:active{text-decoration:none;color:#1E90FF}
+a:hover{color:#555}
+.list{list-style:none;padding:0;cursor:default;--border-color:#999}
+.list>li{padding:10px 20px;border:1px var(--border-color) solid;border-bottom:none;font-size:12px;color:#747474;animation-fill-mode:forwards;animation-duration:.2s;transform:translateY(-20px);opacity:0;background:#F9F9F9}
+.list>li.last-visited{background:#d7d7d7}
+.list>li.visible{transform:translateY(0);opacity:1}
+.list>li:first-child{border-radius:5px 5px 0 0}
+.list>li:last-child{border-bottom:1px var(--border-color) solid;border-radius:0 0 5px 5px}
+.list>li>:first-child{font-size:16px;color:#000}
+@keyframes fade-in{
+	from{transform:translateY(-20px);opacity:0}
+	to{transform:translateY(0);opacity:1}
+}
+@keyframes fade-out{
+	from{transform:translateY(0);opacity:1}
+	to{transform:translateY(20px);opacity:0}
+}
+img{max-width:600px}
+</style></head>
+<body id="content"><h1>splash历史整合 (style copy from BiliPlus & data from Bilibili)</h1>
+<h3><table id="tbl" border=1 width="100%" rules="none" style="border:0px solid #d7d7d7; border-collapse:collapse;">
+<tr>
+<td align="center" valign="center"><a href="./0523.html">⇦05-23　</a></td>
+<td align="center" valign="center">2018-05-24-重神机潘多拉</td>
+<td align="center" valign="center"><a href="./0527.html">　05-27⇨</a></td>
+</tr>
+</table></h3>
+<ul class="list" id="primary"></ul><ul class="list" id="secondary"></ul><script>
+'use strict';
+function _(e,t,n){var r=null;if("text"===e)return document.createTextNode(t);r=document.createElement(e);for(var l in t)if("style"===l)for(var a in t.style)r.style[a]=t.style[a];else if("className"===l)r.className=t[l];else if("event"===l)for(var a in t[l])r.addEventListener(a,t[l][a]);else r.setAttribute(l,t[l]);if(n)for(var s=0;s<n.length;s++)null!=n[s]&&r.appendChild(n[s]);return r}
+function gEle(a){return document.getElementById(a);}
+var pageConfig={lang:'zh'},
+canls=true;
+(function(){
+var items=[{"n":"20180524_00","t":"320x480","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/72c50cb5b24552109e7167a9f9f3a195.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23811/"}]}},
+{"n":"20180524_00","t":"375x647","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/9de0faaf4010680b86aca76f2c35506f.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23812/"}]}},
+{"n":"20180524_00","t":"480x640","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/e18d2b0856a58a4f52c87a32b52920ce.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23813/"}]}},
+{"n":"20180524_00","t":"480x728","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/c1d7440313ded38eac83ba9b41792e27.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23814/"}]}},
+{"n":"20180524_00","t":"480x800","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/94fbc8de3223f84cf3177b1f57d73f6a.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23815/"}]}},
+{"n":"20180524_00","t":"480x854","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/fd80e42b2b603ec6480d94f71f5dd803.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23816/"}]}},
+{"n":"20180524_00","t":"600x976","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/f4f0dce9a08d295ba98aae6311f3fc88.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23817/"}]}},
+{"n":"20180524_00","t":"640x960","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/2d7f2a4a666266522a02376f98edbfe3.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23818/"}]}},
+{"n":"20180524_00","t":"640x1136","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/69cb37e639b1d8c02ff347e577bac22f.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23819/"}]}},
+{"n":"20180524_00","t":"720x1184","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/aaba58d9073058d1576ffa3088e89a03.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23820/"}]}},
+{"n":"20180524_00","t":"720x1208","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/f420ed73b9eb93db17e3d2928aefb7ea.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23821/"}]}},
+{"n":"20180524_00","t":"720x1280","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/8dfe40da7311e31da95195bdb88b66c7.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23822/"}]}},
+{"n":"20180524_00","t":"750x1334","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"http://i0.hdslb.com/bfs/archive/4824f4f114214b6b1e1b606e9792bd0eae52f7ff.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23823/"}]}},
+{"n":"20180524_00","t":"768x976","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/fa84a73f4dc6c45933f0755cabf9e2e6.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23824/"}]}},
+{"n":"20180524_00","t":"768x1024","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/623601245a33fca26211c95f5710e80a.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23825/"}]}},
+{"n":"20180524_00","t":"768x1280","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/3229771a4505559e94d256dd9112228d.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23826/"}]}},
+{"n":"20180524_00","t":"800x1216","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/55c6bf1ffbbdba78b00f18d0422c0e5b.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23827/"}]}},
+{"n":"20180524_00","t":"800x1232","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/53541fb82cde0528ccc79e2c4b1f3c2c.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23828/"}]}},
+{"n":"20180524_00","t":"800x1280","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/4afad097324c3168db229fd1341fd159.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23829/"}]}},
+{"n":"20180524_00","t":"1024x768","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"http://i0.hdslb.com/bfs/archive/4f1a4c13a0772a4eb5e7cb84b2e72c390bc98b48.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23830/"}]}},
+{"n":"20180524_00","t":"1080x1776","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/5cfdec62cfe559e997679f7361b6f339.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23831/"}]}},
+{"n":"20180524_00","t":"1080x1920","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"http://i0.hdslb.com/bfs/archive/68b26102c1a1970861fa44d851b3bfe1f60f746f.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23832/"}]}},
+{"n":"20180524_00","t":"1125x2436","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"http://i0.hdslb.com/bfs/archive/c2a161387cc9053a83a20bbb6505abc310fe53e4.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23833/"}]}},
+{"n":"20180524_00","t":"1152x1920","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/89d8d25632942738fb651970bf137c40.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23834/"}]}},
+{"n":"20180524_00","t":"1242x2208","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"http://i0.hdslb.com/bfs/archive/d558105f92384ef3a117f31d81a02342cb53614b.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23835/"}]}},
+{"n":"20180524_00","t":"1440x2560","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/f61b1c9bddb9195f6dfb1abc3e1917e4.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23836/"}]}},
+{"n":"20180524_00","t":"1536x2048","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/04d1df45be202874681d27e2c9dfbd83.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23837/"}]}},
+{"n":"20180524_00","t":"1536x2560","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/bbec87a472175d943c3c1a20dc1dee8c.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23838/"}]}},
+{"n":"20180524_00","t":"1600x2560","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/851744d93c57ed0d80b10add515b5f6f.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23839/"}]}},
+{"n":"20180524_00","t":"2048x2732","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/925b1479eaf20f132d2f7fb3741bc8b0.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23840/"}]}},
+{"n":"20180524_00","t":"2732x2048","c":{"data":[{"id":"","start_time":1527091200,"end_time":1527177599,"thumb":"http://i0.hdslb.com/bfs/archive/5546a42eb8370d6b05cefcea698c4ca8c1ca26f5.jpg","uri":"https://m.bilibili.com/bangumi/play/ss23841/"}]}}
+];
+function prettySize(size) {
+	var index = 0, sizeUnit = [' B',' KB', ' MB'];
+	while (size >= 1024) {
+		index ++;
+		size /= 1024;
+	}
+	return size.toFixed(index>0?2:0) + sizeUnit[index];
+}
+var currentState, pendingState = 0, preserveScroll = [0,0], classMap = ['primary','secondary'], switching = false, pendingClassModify=[];;
+function slideOutOnScreen() {
+	switching = true;
+	preserveScroll[currentState] = window.scrollY;
+	var list = document.getElementById(classMap[currentState]).children, lastElement;
+	for(var i=0,offset=0;i<list.length;i++) {
+		var item = list[i], box = item.getBoundingClientRect();
+		if (box.bottom > 0 && box.top < innerHeight) {
+			item.classList.add('visible');
+			item.style.animationName = 'fade-out';
+			item.style.animationDelay = (offset++*.03) + 's';
+			lastElement=i;
+		} else {
+			pendingClassModify.push(item);
+			item.style.animationName = '';
+			item.style.animationDelay = '';
+		}
+	}
+	list[lastElement].addEventListener('animationend', slideOutFinished);
+}
+function slideOutFinished() {
+	this.removeEventListener('animationend', slideOutFinished);
+	document.getElementById(classMap[currentState]).style.display = 'none';
+	document.getElementById(classMap[pendingState]).style.display = '';
+	while (pendingClassModify.length) pendingClassModify.pop().classList.remove('visible');
+	slideInOnScreen();
+}
+function slideInOnScreen() {
+	switching = true;
+	window.scrollTo(0,preserveScroll[pendingState]);
+	var list = document.getElementById(classMap[pendingState]).children, lastElement;
+	for(var i=0,offset=0;i<list.length;i++) {
+		var item = list[i], box = item.getBoundingClientRect();
+		if (box.bottom > -200 && box.top < innerHeight + 200) {
+			item.style.animationName = 'fade-in';
+			item.style.animationDelay = (offset++*.05) + 's';
+			item.classList.remove('visible');
+			lastElement=i;
+		} else {
+			item.style.animationName = '';
+			item.style.animationDelay = '';
+			pendingClassModify.push(item);
+		}
+	}
+	list[lastElement].addEventListener('animationend', slideInFinished);
+	window.img_lazyload&&img_lazyload();
+}
+function slideInFinished() {
+	this.removeEventListener('animationend', slideInFinished);
+	currentState = pendingState;
+	while (pendingClassModify.length) pendingClassModify.pop().classList.add('visible');
+	switching = false;
+}
+var list = document.getElementById('primary');
+items.forEach(function(i) {
+	var match = i.n.match(/(\d{8})_?(\d{2})/);
+	var date = match[1],
+			hour = match[2],
+			data = i.c.data || i.c.result || [],
+			tooltip, bg, logo, url,
+			start = i.c.data.start_time || i.startTime || i.begin_time,
+			end = i.end_time||i.endTime;
+	//console.log(date, hour, data.length);
+	var dateString = [date.substr(0,4),date.substr(4,2),date.substr(6,2)].join('/');
+	var title = i.t;
+	var item = _('li', { event: {click: genSecondary}}, [
+		_('div', {}, [_('text', dateString + ' － ' + title)]),
+		_('div', {}, [_('span', {class:'timeago',datetime:dateString+' '+hour+':00:00 +0800'}), _('text', ' '+data.length+' 个条目 ')])
+	]);
+	item.list = data;
+	list.appendChild(item);
+});
+slideInOnScreen();
+function genSecondary() {
+	if (switching) return;
+	var secondary = document.getElementById('secondary');
+	Array.from(secondary.children).forEach(function(i){i.remove()});
+	Array.from(document.querySelectorAll('.last-visited')).forEach(function(i){i.classList.remove('last-visited')});
+	this.classList.add('last-visited');
+	secondary.appendChild(_('li', {event:{click:returnPrimary}}, [
+		_('div',{},[_('text', '返回')])
+	]));
+	var data = this.list;
+	data.forEach(function(i) {
+		var start = i.start_time || i.startTime || i.begin_time,
+				end = i.end_time||i.endTime,
+				url = i.uri,
+				pic = (i.thumb || i.thumbUrl).split('?')[0];
+		secondary.appendChild(_('li', {style:{fontSize:'14px',color:'#333'}}, [
+			_('div', {}, [_('text', '显示时间段：'+(new Date(start*1e3)).toLocaleString(undefined, {hour12:false}) + ' - ' + (new Date(end*1e3)).toLocaleString(undefined, {hour12:false}))]),
+			_('div', {}, url?[_('text', '跳转链接 '), _('a', {href:url,target:'_blank'},[_('text', url)])] : []),
+			_('img', {'original-src':pic,_src:pic+'@600w.jpg',src:blankImg,style:{width:(600/devicePixelRatio)+'px',maxWidth:'100%'},alt:'',title:pic,event:{error:imgLost}})
+		]));
+	});
+	data.length > 1 && secondary.appendChild(_('li', {event:{click:returnPrimary}}, [
+		_('div',{},[_('text', '返回')])
+	]));
+	imgClick();
+	pendingState = 1;
+	slideOutOnScreen();
+}
+function returnPrimary() {
+	pendingState = 0;
+	slideOutOnScreen();
+}
+function imgLost() {
+	this.replaceWith(_('text',this.alt + ' 图像已丢失'));
+}
+})();
+</script>
+<script src="../js/timeago.min.js"></script>
+<script src="../js/bottomscript.min.js"></script>
+</body></html>
