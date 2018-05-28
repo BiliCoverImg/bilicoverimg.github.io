@@ -1,0 +1,192 @@
+<!DOCTYPE HTML><html>
+<head><meta charset=utf-8><meta name="referrer" content="never"><meta name=viewport content="width=device-width,initial-scale=1.0,user-scalable=0"><title>splash历史整合</title>
+<link rel="stylesheet" type="text/css" href="../style/biliplus.min.css?171014" />
+<style>
+body{margin:10px}
+h1{font-size:20px}
+a:link,a:visited,a:active{text-decoration:none;color:#1E90FF}
+a:hover{color:#555}
+.list{list-style:none;padding:0;cursor:default;--border-color:#999}
+.list>li{padding:10px 20px;border:1px var(--border-color) solid;border-bottom:none;font-size:12px;color:#747474;animation-fill-mode:forwards;animation-duration:.2s;transform:translateY(-20px);opacity:0;background:#F9F9F9}
+.list>li.last-visited{background:#d7d7d7}
+.list>li.visible{transform:translateY(0);opacity:1}
+.list>li:first-child{border-radius:5px 5px 0 0}
+.list>li:last-child{border-bottom:1px var(--border-color) solid;border-radius:0 0 5px 5px}
+.list>li>:first-child{font-size:16px;color:#000}
+@keyframes fade-in{
+	from{transform:translateY(-20px);opacity:0}
+	to{transform:translateY(0);opacity:1}
+}
+@keyframes fade-out{
+	from{transform:translateY(0);opacity:1}
+	to{transform:translateY(20px);opacity:0}
+}
+img{max-width:600px}
+</style></head>
+<body id="content"><h1>splash历史整合 (style copy from BiliPlus & data from Bilibili)</h1>
+<h3><table id="tbl" border=1 width="100%" rules="none" style="border:0px solid #d7d7d7; border-collapse:collapse;">
+<tr>
+<td align="center" valign="center"><a href="./0527.html">⇦05-27</a></td>
+<td align="center" valign="center">2018-05-28-Clarins广告</td>
+<td align="center" valign="center">??-??⇨</td>
+</tr>
+</table></h3>
+<ul class="list" id="primary"></ul><ul class="list" id="secondary"></ul><script>
+'use strict';
+function _(e,t,n){var r=null;if("text"===e)return document.createTextNode(t);r=document.createElement(e);for(var l in t)if("style"===l)for(var a in t.style)r.style[a]=t.style[a];else if("className"===l)r.className=t[l];else if("event"===l)for(var a in t[l])r.addEventListener(a,t[l][a]);else r.setAttribute(l,t[l]);if(n)for(var s=0;s<n.length;s++)null!=n[s]&&r.appendChild(n[s]);return r}
+function gEle(a){return document.getElementById(a);}
+var pageConfig={lang:'zh'},
+canls=true;
+(function(){
+var items=[{"n":"20180528_00","t":"320x480","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/1da7d3fcf96c6f0b7b8250aa175870ab.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"375x647","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/6dd8b8734cc416d40e51a7b87289f1ac.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"480x640","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/fb6423b61082f89b4fd5b19ec9390397.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"480x728","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/d63666135c5855012d01dee79c55b8da.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"480x800","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/4534e47a5998bba26c28d177efa47d97.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"480x854","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/d62e217d5efc03823014deb768388cb0.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"600x976","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/06c70dd95cbd19122b37bb0d881201cb.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"640x960","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/6514429daa75ebccf0036d2920d4e6fa.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"640x1136","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/e62c86806b27024e6a9c068072bf5576.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"720x1184","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/8b54174a80762bcf9191dd9719143e73.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"720x1208","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/9eeeaafe2986d42855a061e4d702ad80.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"720x1280","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/ba87a5341b5318a626979e9bd863f1fb.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"750x1334","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"http://i0.hdslb.com/bfs/archive/e67361b1ceb76b1044a57c552bf46ede7427a991.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"768x976","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/f4eb3d81c862a3b32e61c04986d56d20.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"768x1024","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/5e2dd2e5aa1f060b9399c7ccdc0655bd.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"768x1280","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/0e3573cc9383558d2b4af0af19e7abc4.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"800x1216","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/8c9cb8a91588543fa0f95e4fc3a8e2ce.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"800x1232","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/f205646ae419d2bd1795d48abfafdba4.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"800x1280","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/c0dc2df2fe1d36a7ff9dee1123e3fda4.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1024x768","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"http://i0.hdslb.com/bfs/archive/5574573a9db17293404c4cbaadf047c17d66539f.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1080x1776","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/d605dfec65b4e7b4fc7ca74a462e949e.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1080x1920","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"http://i0.hdslb.com/bfs/archive/3c71703b5ee9df9d0a516ac84b40c279fdb45417.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1125x2436","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"http://i0.hdslb.com/bfs/archive/aaba52be0c739e8131f8642719a8ff92ec565f65.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1152x1920","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/6203be55ffefb43c1b72ae70432d3506.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1242x2208","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"http://i0.hdslb.com/bfs/archive/a780dffb36dcd5de6fb109b93cbf2c90284e5f25.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1440x2560","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/cb33e64394a7ddc3f86a0fe57505c137.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1536x2048","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/dda56e26ad2a53b141d92b57d951d83b.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1536x2560","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/967380f6af7d87a0b67b2c66c369ba75.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"1600x2560","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/7c76608ef03cdc033a9ecaf956e31526.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"2048x2732","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"https://i0.hdslb.com/bfs/sycp/tmaterial/201805/b48ff8cc6c91ac31c3a92e2b2065587e.jpg","uri":"http://b23.tv/rARVVb"}]}},
+{"n":"20180528_00","t":"2732x2048","c":{"data":[{"id":"","start_time":1527436800,"end_time":1527523199,"thumb":"http://i0.hdslb.com/bfs/archive/cec6d97ba0e9af08d218fa57079404ca76abe8af.jpg","uri":"http://b23.tv/rARVVb"}]}}];
+function prettySize(size) {
+	var index = 0, sizeUnit = [' B',' KB', ' MB'];
+	while (size >= 1024) {
+		index ++;
+		size /= 1024;
+	}
+	return size.toFixed(index>0?2:0) + sizeUnit[index];
+}
+var currentState, pendingState = 0, preserveScroll = [0,0], classMap = ['primary','secondary'], switching = false, pendingClassModify=[];;
+function slideOutOnScreen() {
+	switching = true;
+	preserveScroll[currentState] = window.scrollY;
+	var list = document.getElementById(classMap[currentState]).children, lastElement;
+	for(var i=0,offset=0;i<list.length;i++) {
+		var item = list[i], box = item.getBoundingClientRect();
+		if (box.bottom > 0 && box.top < innerHeight) {
+			item.classList.add('visible');
+			item.style.animationName = 'fade-out';
+			item.style.animationDelay = (offset++*.03) + 's';
+			lastElement=i;
+		} else {
+			pendingClassModify.push(item);
+			item.style.animationName = '';
+			item.style.animationDelay = '';
+		}
+	}
+	list[lastElement].addEventListener('animationend', slideOutFinished);
+}
+function slideOutFinished() {
+	this.removeEventListener('animationend', slideOutFinished);
+	document.getElementById(classMap[currentState]).style.display = 'none';
+	document.getElementById(classMap[pendingState]).style.display = '';
+	while (pendingClassModify.length) pendingClassModify.pop().classList.remove('visible');
+	slideInOnScreen();
+}
+function slideInOnScreen() {
+	switching = true;
+	window.scrollTo(0,preserveScroll[pendingState]);
+	var list = document.getElementById(classMap[pendingState]).children, lastElement;
+	for(var i=0,offset=0;i<list.length;i++) {
+		var item = list[i], box = item.getBoundingClientRect();
+		if (box.bottom > -200 && box.top < innerHeight + 200) {
+			item.style.animationName = 'fade-in';
+			item.style.animationDelay = (offset++*.05) + 's';
+			item.classList.remove('visible');
+			lastElement=i;
+		} else {
+			item.style.animationName = '';
+			item.style.animationDelay = '';
+			pendingClassModify.push(item);
+		}
+	}
+	list[lastElement].addEventListener('animationend', slideInFinished);
+	window.img_lazyload&&img_lazyload();
+}
+function slideInFinished() {
+	this.removeEventListener('animationend', slideInFinished);
+	currentState = pendingState;
+	while (pendingClassModify.length) pendingClassModify.pop().classList.add('visible');
+	switching = false;
+}
+var list = document.getElementById('primary');
+items.forEach(function(i) {
+	var match = i.n.match(/(\d{8})_?(\d{2})/);
+	var date = match[1],
+			hour = match[2],
+			data = i.c.data || i.c.result || [],
+			tooltip, bg, logo, url,
+			start = i.c.data.start_time || i.startTime || i.begin_time,
+			end = i.end_time||i.endTime;
+	//console.log(date, hour, data.length);
+	var dateString = [date.substr(0,4),date.substr(4,2),date.substr(6,2)].join('/');
+	var title = i.t;
+	var item = _('li', { event: {click: genSecondary}}, [
+		_('div', {}, [_('text', dateString + ' － ' + title)]),
+		_('div', {}, [_('span', {class:'timeago',datetime:dateString+' '+hour+':00:00 +0800'}), _('text', ' '+data.length+' 个条目 ')])
+	]);
+	item.list = data;
+	list.appendChild(item);
+});
+slideInOnScreen();
+function genSecondary() {
+	if (switching) return;
+	var secondary = document.getElementById('secondary');
+	Array.from(secondary.children).forEach(function(i){i.remove()});
+	Array.from(document.querySelectorAll('.last-visited')).forEach(function(i){i.classList.remove('last-visited')});
+	this.classList.add('last-visited');
+	secondary.appendChild(_('li', {event:{click:returnPrimary}}, [
+		_('div',{},[_('text', '返回')])
+	]));
+	var data = this.list;
+	data.forEach(function(i) {
+		var start = i.start_time || i.startTime || i.begin_time,
+				end = i.end_time||i.endTime,
+				url = i.uri,
+				pic = (i.thumb || i.thumbUrl).split('?')[0];
+		secondary.appendChild(_('li', {style:{fontSize:'14px',color:'#333'}}, [
+			_('div', {}, [_('text', '显示时间段：'+(new Date(start*1e3)).toLocaleString(undefined, {hour12:false}) + ' - ' + (new Date(end*1e3)).toLocaleString(undefined, {hour12:false}))]),
+			_('div', {}, url?[_('text', '跳转链接 '), _('a', {href:url,target:'_blank'},[_('text', url)])] : []),
+			_('img', {'original-src':pic,_src:pic+'@600w.jpg',src:blankImg,style:{width:(600/devicePixelRatio)+'px',maxWidth:'100%'},alt:'',title:pic,event:{error:imgLost}})
+		]));
+	});
+	data.length > 1 && secondary.appendChild(_('li', {event:{click:returnPrimary}}, [
+		_('div',{},[_('text', '返回')])
+	]));
+	imgClick();
+	pendingState = 1;
+	slideOutOnScreen();
+}
+function returnPrimary() {
+	pendingState = 0;
+	slideOutOnScreen();
+}
+function imgLost() {
+	this.replaceWith(_('text',this.alt + ' 图像已丢失'));
+}
+})();
+</script>
+<script src="../js/timeago.min.js"></script>
+<script src="../js/bottomscript.min.js"></script>
+</body></html>
