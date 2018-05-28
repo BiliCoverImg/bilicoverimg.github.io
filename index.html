@@ -10,7 +10,7 @@
 <link href="css/public.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="css/swiper.min.css">
-	
+    
 <script src="js/swiper.min.js"></script>
 
 <style type="text/css">
@@ -25,32 +25,32 @@
 </style>
 
 <div class="swiper-container">
-	<div class="my-pagination"><ul class="my-pagination-ul"></ul></div>
-	<div class="swiper-wrapper">
-    	
-		<div class="swiper-slide">
-			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="about.html"></iframe>
-		</div>
-		
-		<div class="swiper-slide">
-			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2015.html"></iframe>
-		</div>
+    <div class="my-pagination"><ul class="my-pagination-ul"></ul></div>
+    <div class="swiper-wrapper">
         
+        <div class="swiper-slide">
+            <iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="about.html"></iframe>
+        </div>
         
-		<div class="swiper-slide">
-			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2016.html"></iframe>
-		</div>
-		
-		
-		<div class="swiper-slide">
-			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2017.html"></iframe>
-		</div>
-		
-		
-		<div class="swiper-slide">
-			<iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2018.html"></iframe>
-		</div>
-		
+        <div class="swiper-slide">
+            <iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="birthday.html"></iframe>
+        </div>
+        
+        <div class="swiper-slide">
+            <iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2016.html"></iframe>
+        </div>
+        
+        <div class="swiper-slide">
+            <iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2016.html"></iframe>
+        </div>
+        
+        <div class="swiper-slide">
+            <iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2017.html"></iframe>
+        </div>
+        
+        <div class="swiper-slide">
+            <iframe height="600" allowTransparency="true" style="width:100%;border:none;overflow:auto;" frameborder="0" src="2018.html"></iframe>
+        </div>
 
 <script> 
 var mySwiper = new Swiper('.swiper-container',{
@@ -59,10 +59,11 @@ paginationClickable: true,
 paginationBulletRender: function (index, className) {
 switch (index) {
   case 0: name='关于';break;
-  case 1: name='2015年';break;
-  case 2: name='2016年';break;
-  case 3: name='2017年';break;
-  case 4: name='2018年';break;
+  case 1: name='生日';break;
+  case 2: name='2015';break;
+  case 3: name='2016';break;
+  case 4: name='2017';break;
+  case 5: name='2018';break;
   default: name='';
 }
       return '<li class="' + className + '">' + name + '</li>';
